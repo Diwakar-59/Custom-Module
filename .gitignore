@@ -27,7 +27,7 @@ web/sites/*/files
 config/*/
 web/sites/default/*/files
 # web/sites/*/public
-web/modules/*/
+web/modules/contrib/
 web/themes/contrib/
 # web/themes/custom/
 web/core/*/
