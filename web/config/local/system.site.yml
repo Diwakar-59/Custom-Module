@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 54176b9d-3a5b-43dc-89e8-c92d50604322
+name: 'Local Employee Management Portal'
+mail: diwakar.sah@innoraft.com
+slogan: ''
+page:
+  403: /node/6
+  404: /node/7
+  front: /node/5
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
