@@ -5,7 +5,7 @@ namespace Drupal\helloworld\Form;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
-class helloworldSettingsForm extends ConfigFormBase {
+class HelloworldSettingsForm extends ConfigFormBase {
   /**
    * {@inheritdoc}
    */
@@ -24,13 +24,10 @@ class helloworldSettingsForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    // Form elements go here.
-    // Add your fields, buttons, and other form elements using $form.
     $form['hello_field'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Hello Field'),
       '#default_value' => $this->config('helloworld.settings')->get('hello_field'),
-      // Add other properties as needed.
     ];    
 
     return parent::buildForm($form, $form_state);
@@ -50,8 +47,7 @@ class helloworldSettingsForm extends ConfigFormBase {
 
     elseif ($user->hasPermission('view custom module config page')){
       return;
-      // echo("You need permission to edit the fields!");
-      // return 'helloworld_settings_form';
+
     }
     parent::submitForm($form, $form_state);
   }
